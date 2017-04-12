@@ -19,7 +19,10 @@
 
 \section{Activity Overview}
 
-RSA 알고리즘은 Side-channel attack의 하나인 timing-attack에 취약하다. 현재 timing-attack을 막을 수 있는 기법이 나와 있지만, 실제 안전하지 않은 RSA알고리즘을 대상으로 timing-attack을 시도하고 이를 막는 대응책을 구현하고 테스트하는 것이 본 activity의 목적이다.
+RSA 알고리즘은 Side-channel attack의 하나인 timing-attack에 취약하다. 
+현재 timing-attack을 막을 수 있는 기법이 나와 있지만, 
+실제 안전하지 않은 RSA알고리즘을 대상으로 timing-attack을 시도하고 
+이를 막는 대응책을 구현하고 테스트하는 것이 본 activity의 목적이다.
 
 \section{Exercises}
 
@@ -27,25 +30,31 @@ RSA 알고리즘은 Side-channel attack의 하나인 timing-attack에 취약하�
 
 \begin{exercise}
 
-  Timing attack이 가능한 RSA 소스 코드 \cite{RSAsourcecode} 를 가지고 side-channel attack을 시도한다. 이 exercise에서 예상되는 결과는 secret key를 찾는 것이다.
+  Timing attack이 가능한 RSA 소스 코드 \cite{RSAsourcecode} 를 가지고 side-channel attack을 시도한다. 
+  이 exercise에서 예상되는 결과는 secret key를 찾는 것이다.
 
 \end{exercise}
 
 \begin{exercise}
 
-  앞선 exercise에서의 RSA 소스코드를 수정한다. 현재 나와 있는 timing attack 대응책 또는 개선된 방법으로 RSA 소스 코드를 수정한다. 기본적인 아이디어는 constant time or random time encryption이다.
+  앞선 exercise에서의 RSA 소스코드를 수정하는 것이 주 목적이다.
+  현재 나와 있는 timing attack에 대한 대응책 또는 개선된 방법으로 RSA 소스 코드를 수정한다. 
+  기본적인 아이디어는 constant time or random time encryption이다.
 
 \end{exercise}
 
 \begin{exercise}
 
-  Exercise 2에서 수정한 RSA 알고리즘을 대상으로, exercise 1에서 시도했던 방법으로 timing attack을 시도할 경우 secret key를 찾는 것이 불가능하다는 것을 확인한다.
+  Exercise 2에서 수정한 RSA 알고리즘을 exercise 1에서 시도했던 방법으로 timing attack을 시도할 경우
+  secret key를 찾는 것이 불가능하다는 것을 확인한다.
 
 \end{exercise}
 
 \section{Expected Solutions}
 
-Exercise 1을 성공했을 경우 secret key를 알아낼 수 있다. Exercise 2에서 constant time operation 또는 random time operation을 적용하여 side-channel attack을 막을 수 있다. Exercise 3의 테스트로 실제 개선한 알고리즘이 정확히 동작하는지 확인할 수 있다.
+Exercise 1을 성공했을 경우 secret key를 알아낼 수 있다. 
+Exercise 2에서 constant time operation 또는 random time operation을 적용하여 side-channel attack을 막을 수 있다. 
+Exercise 3의 테스트로 실제 개선한 알고리즘이 정확히 동작하는지 확인할 수 있다.
 
 
 
